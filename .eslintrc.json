@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "no-param-reassign": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "prefer-promise-reject-errors": 0,
+    "import/no-named-as-default": 0,
+    "no-nested-ternary": 0,
+    "max-classes-per-file": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/no-throw-literal": 0,
+    "@typescript-eslint/naming-convention": 0,
+    "no-underscore-dangle": 0,
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "@typescript-eslint/no-namespace": 0,
+    "class-methods-use-this": 0,
+    "import/export": 0
+  },
+  "settings": {
+    "tailwindcss": {
+      "config": "tailwind.config.js",
+      "callees": ["classNames", "classnames", "className"]
+    }
+  }
+}
